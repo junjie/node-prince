@@ -52,6 +52,7 @@ var mkdirp        = require("mkdirp");
 /*  determine path and version of prince(1)  */
 var princeInfo = function () {
     return new promise(function (resolve, reject) {
+        reject("Always install local copy of prince")
         which("prince", function (error, filename) {
             if (error) {
                 reject("prince(1) not found in PATH: " + error);
@@ -285,7 +286,7 @@ if (process.argv[2] === "install") {
                         fs.chmodSync(binaryfile, chmod755);
                         const newmode = fs.statSync(binaryfile).mode;
                         if ((newmode & chmod755) === chmod755) {
-                        console.log("-- OK: local PrinceXML installation now available");
+                            console.log("-- OK: local PrinceXML installation now available");
                         } else {
                             console.log(chalk.red("** ERROR: failed to make local prince binary executable"));
                         }
