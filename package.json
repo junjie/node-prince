@@ -2,12 +2,12 @@
     "name":        "@junjie_npm/prince",
     "homepage":    "https://github.com/junjie/node-prince",
     "description": "Node API for executing XML/HTML to PDF renderer PrinceXML via prince(1) CLI",
-    "version":     "1.9.3",
+    "version":     "1.9.4",
     "license":     "MIT",
     "author": {
-        "name":    "Dr. Ralf S. Engelschall",
-        "email":   "rse@engelschall.com",
-        "url":     "http://engelschall.com"
+        "name":    "Lin Junjie",
+        "email":   "mail.junjie@gmail.com",
+        "url":     "https://github.com/junjie/"
     },
     "keywords": [
         "Prince", "PrinceXML", "CLI", "XML", "HTML", "PDF", "renderer", "API"
